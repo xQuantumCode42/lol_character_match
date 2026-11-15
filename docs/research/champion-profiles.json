@@ -1,0 +1,6352 @@
+{
+  "researchedDate": "2026-11-15",
+  "sourceVersion": "16.22.1",
+  "count": 173,
+  "purpose": "供新手位置與英雄偏好測驗討論使用的完整英雄特性初稿",
+  "methodology": "官方欄位來自 Riot Data Dragon，玩法摘要、位置候選、學習負擔與可能吸引力由技能分析整理。偏好配對尚待試玩驗證。",
+  "laneEvidenceStatus": "未收集16.22版本位置出場率或勝率。位置為玩法候選，包含待驗證條目。",
+  "officialDifficultyCaveat": "保留Data Dragon原始0至10數值。數值未作新手適合度換算，0值需另行核對。",
+  "champions": [
+    {
+      "id": "Aatrox",
+      "name": "厄薩斯",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Aatrox.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/aatrox/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "三段劍擊命中不同範圍，衝刺調整並以傷害回血",
+        "possibleAppeal": "在激烈交鋒中持續站住",
+        "learningPressure": "劍擊落點、距離與回血窗口",
+        "fantasyThemes": [
+          "冥血巨劍",
+          "墮落神祇"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ahri",
+      "name": "阿璃",
+      "official": {
+        "classes": [
+          "Mage",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ahri.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ahri/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術、近身切入",
+        "signatureMechanics": "魅惑抓人，多段衝刺與往返法球",
+        "possibleAppeal": "靈活試探後抓住機會",
+        "learningPressure": "方向技能命中與進退路線",
+        "fantasyThemes": [
+          "狐靈",
+          "魅惑",
+          "靈魂"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Akali",
+      "name": "阿卡莉",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Akali.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/akali/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "煙幕藏身，多段位移與環印強化攻擊",
+        "possibleAppeal": "貼身周旋、出其不意",
+        "learningPressure": "能量、環印走位與連段撤退",
+        "fantasyThemes": [
+          "忍者",
+          "煙霧",
+          "苦無"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Akshan",
+      "name": "埃可尚",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 0,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Akshan.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/akshan/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻、近距離擺盪",
+        "signatureMechanics": "鉤爪擺盪、偽裝，擊殺特定敵人可復活隊友",
+        "possibleAppeal": "獨自行動也能扭轉隊友命運",
+        "learningPressure": "擺盪地形、雙發節奏與目標選擇",
+        "fantasyThemes": [
+          "俠盜",
+          "鉤爪",
+          "復仇"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Alistar",
+      "name": "亞歷斯塔",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Alistar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/alistar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "衝撞與擊飛，承傷減免並保護或推離敵人",
+        "possibleAppeal": "替團隊撞開局面、承受火力",
+        "learningPressure": "連段方向與開戰後隊友距離",
+        "fantasyThemes": [
+          "牛頭巨人",
+          "蠻力"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ambessa",
+      "name": "安比薩",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ambessa.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ambessa/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "技能後衝刺，穿插普攻返還能量",
+        "possibleAppeal": "連續追擊與精密移動",
+        "learningPressure": "能量循環、技能邊緣與連段",
+        "fantasyThemes": [
+          "軍閥",
+          "雙刃",
+          "武技"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Amumu",
+      "name": "阿姆姆",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Amumu.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/amumu/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、繃帶突進",
+        "signatureMechanics": "繃帶接近敵人，再以範圍暈眩創造團戰機會",
+        "possibleAppeal": "一次行動幫助整個團隊",
+        "learningPressure": "繃帶命中與進場時機",
+        "fantasyThemes": [
+          "木乃伊",
+          "詛咒",
+          "孤獨"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Anivia",
+      "name": "艾妮維亞",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 600,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Anivia.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/anivia/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "冰牆改變通路，冰球與風暴控制區域",
+        "possibleAppeal": "預先布置、讓對方受地形限制",
+        "learningPressure": "牆的位置、技能連動與魔力",
+        "fantasyThemes": [
+          "冰晶鳳凰",
+          "冰雪",
+          "重生"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Annie",
+      "name": "安妮",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 625,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Annie.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/annie/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術",
+        "signatureMechanics": "管理施法次數，暈眩爆發並召喚泰貝爾",
+        "possibleAppeal": "把準備好的力量一次釋放",
+        "learningPressure": "暈眩層數、施法距離與熊的指令",
+        "fantasyThemes": [
+          "小女孩",
+          "火焰",
+          "玩具熊"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Aphelios",
+      "name": "亞菲利歐",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Aphelios.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/aphelios/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "五種武器輪替，主副武器與彈藥相互影響",
+        "possibleAppeal": "研究組合、以準備換取多樣解法",
+        "learningPressure": "武器順序、彈藥與組合記憶",
+        "fantasyThemes": [
+          "月光",
+          "武器庫",
+          "沉默獵手"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ashe",
+      "name": "艾希",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Support"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 600,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ashe.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ashe/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "持續緩速、獵鷹偵察與遠距離暈眩箭",
+        "possibleAppeal": "穩定輸出並提供情報與機會",
+        "learningPressure": "走位、偵察目標與大箭預判",
+        "fantasyThemes": [
+          "寒冰",
+          "弓箭",
+          "領袖"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "AurelionSol",
+      "name": "翱銳龍獸",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/AurelionSol.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/aurelionsol/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離持續法術",
+        "signatureMechanics": "收集星塵強化龍息、黑洞與落星",
+        "possibleAppeal": "逐步累積成宏大的力量",
+        "learningPressure": "安全發育、吐息站位與飛行路徑",
+        "fantasyThemes": [
+          "星辰",
+          "巨龍",
+          "宇宙"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Aurora",
+      "name": "歐羅拉",
+      "official": {
+        "classes": [
+          "Mage",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Aurora.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/aurora/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術",
+        "signatureMechanics": "靈咒往返、隱形跳躍與區域內傳送",
+        "possibleAppeal": "在不同位置穿梭、反覆拉扯",
+        "learningPressure": "進退距離與區域邊界運用",
+        "fantasyThemes": [
+          "兔耳",
+          "精靈",
+          "雙界"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Azir",
+      "name": "阿祈爾",
+      "official": {
+        "classes": [
+          "Mage",
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Azir.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/azir/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、士兵代打",
+        "signatureMechanics": "布置沙兵代替攻擊，位移與禁軍牆重塑戰線",
+        "possibleAppeal": "指揮陣形、掌握攻擊空間",
+        "learningPressure": "本體與沙兵距離、位移連段",
+        "fantasyThemes": [
+          "沙漠皇帝",
+          "軍隊"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Bard",
+      "name": "巴德",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Bard.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/bard/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離",
+        "signatureMechanics": "收集編鐘、設置神龕、穿牆通道與範圍凝滯",
+        "possibleAppeal": "四處探索、創造特殊路線",
+        "learningPressure": "遊走時機、通道與凝滯影響雙方",
+        "fantasyThemes": [
+          "宇宙旅者",
+          "精靈",
+          "音律"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Belveth",
+      "name": "貝爾薇斯",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Belveth.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/belveth/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "累積攻速、多方向衝刺，以珊瑚變身並召喚虛空魚",
+        "possibleAppeal": "持續進化、擴張自己的力量",
+        "learningPressure": "衝刺方向、資源取得與變身窗口",
+        "fantasyThemes": [
+          "虛空女皇",
+          "異形",
+          "軍群"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Blitzcrank",
+      "name": "布里茨",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Blitzcrank.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/blitzcrank/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠距離抓取",
+        "signatureMechanics": "飛拳拉人，擊飛並破盾沉默",
+        "possibleAppeal": "一次精準命中改變局面",
+        "learningPressure": "鉤子的命中與拉回的目標是否合適",
+        "fantasyThemes": [
+          "蒸汽機器人",
+          "鐵拳"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Brand",
+      "name": "布蘭德",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Brand.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/brand/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術",
+        "signatureMechanics": "技能疊加燃燒，觸發爆炸與彈跳火焰",
+        "possibleAppeal": "讓連鎖反應在密集敵人間擴散",
+        "learningPressure": "技能順序、命中與自身站位",
+        "fantasyThemes": [
+          "烈焰",
+          "災難",
+          "焚燒"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Braum",
+      "name": "布郎姆",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Braum.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/braum/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "盾牌攔截、跳向隊友，合作疊加暈眩",
+        "possibleAppeal": "親自擋下危險、和夥伴互補",
+        "learningPressure": "盾牌方向、保護目標與被動配合",
+        "fantasyThemes": [
+          "巨盾",
+          "守護者",
+          "冰雪"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Briar",
+      "name": "布蕾爾",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Briar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/briar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "進入自動追擊的狂熱，以尖叫中止並恢復控制",
+        "possibleAppeal": "投入追獵、在失控邊緣反轉",
+        "learningPressure": "狂熱限制、停止時機與大絕落點",
+        "fantasyThemes": [
+          "吸血",
+          "枷鎖",
+          "狂野"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Caitlyn",
+      "name": "凱特琳",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 650,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Caitlyn.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/caitlyn/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "長射程普攻",
+        "signatureMechanics": "射程壓制、陷阱布置與爆頭連動",
+        "possibleAppeal": "保持距離、精準懲罰踏入陷阱的人",
+        "learningPressure": "陷阱預判、射程邊界與爆頭銜接",
+        "fantasyThemes": [
+          "狙擊手",
+          "警探",
+          "步槍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Camille",
+      "name": "卡蜜兒",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Camille.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/camille/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "鉤牆突進、延遲強化踢擊與單人結界",
+        "possibleAppeal": "精確挑選目標、完成俐落決鬥",
+        "learningPressure": "鉤索角度、二段攻擊與隔離時機",
+        "fantasyThemes": [
+          "機械義肢",
+          "優雅",
+          "獵手"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Cassiopeia",
+      "name": "卡莎碧雅",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Cassiopeia.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/cassiopeia/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離持續法術",
+        "signatureMechanics": "毒霧限制位移，連續毒牙與面向判定石化",
+        "possibleAppeal": "持續施壓、限制對手行動",
+        "learningPressure": "施法頻率、距離與石化朝向",
+        "fantasyThemes": [
+          "蛇身",
+          "劇毒",
+          "石化"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Chogath",
+      "name": "科加斯",
+      "official": {
+        "classes": [
+          "Tank",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Chogath.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/chogath/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠距離控場",
+        "signatureMechanics": "擊飛與沉默限制對手，吞噬累積體型與生命",
+        "possibleAppeal": "成為越來越巨大的威脅",
+        "learningPressure": "延遲擊飛預判與吞噬血量判斷",
+        "fantasyThemes": [
+          "虛空巨獸",
+          "吞噬",
+          "巨大化"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Corki",
+      "name": "庫奇",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Corki.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/corki/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻與飛彈",
+        "signatureMechanics": "穿插普攻、機槍與飛彈，以俯衝調整位置",
+        "possibleAppeal": "火力與飛行帶來的機動作戰",
+        "learningPressure": "射擊距離、技能穿插與俯衝用途",
+        "fantasyThemes": [
+          "飛行員",
+          "機械",
+          "火砲"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Darius",
+      "name": "達瑞斯",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Darius.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/darius/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "流血疊層、外圈回血與連續斬殺",
+        "possibleAppeal": "正面壓迫、越戰越有威脅",
+        "learningPressure": "外圈距離、接近敵人與層數管理",
+        "fantasyThemes": [
+          "重斧",
+          "征服",
+          "處決"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Diana",
+      "name": "黛安娜",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Diana.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/diana/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "月光標記接突進，拉聚敵人後爆發",
+        "possibleAppeal": "抓準時機衝入人群",
+        "learningPressure": "標記命中、突進重置與團戰進場",
+        "fantasyThemes": [
+          "月光",
+          "彎刃",
+          "戰士"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Draven",
+      "name": "達瑞文",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Draven.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/draven/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "接住迴旋斧維持火力，累積資源等待擊殺兌現",
+        "possibleAppeal": "高強度表演、讓操作即時得到回報",
+        "learningPressure": "接斧落點、走位與兌現風險",
+        "fantasyThemes": [
+          "角鬥士",
+          "飛斧",
+          "張揚"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "DrMundo",
+      "name": "蒙多醫生",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/DrMundo.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/drmundo/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、投擲消耗",
+        "signatureMechanics": "骨鋸緩速、抵擋硬控與大量生命回復",
+        "possibleAppeal": "承受攻擊後繼續向前",
+        "learningPressure": "骨鋸命中、生命與回復時機",
+        "fantasyThemes": [
+          "怪醫",
+          "化學改造",
+          "巨力"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ekko",
+      "name": "艾克",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ekko.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ekko/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "預放時間場，突進打出爆發並倒回舊位置",
+        "possibleAppeal": "冒險後留有回溯與反轉空間",
+        "learningPressure": "延遲控制、殘影位置與撤退時機",
+        "fantasyThemes": [
+          "時間",
+          "街頭發明家"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Elise",
+      "name": "伊莉絲",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Elise.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/elise/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠近形態切換",
+        "signatureMechanics": "人形結繭接蜘蛛撲殺，以升空避險",
+        "possibleAppeal": "快速轉換模式、主動製造突破",
+        "learningPressure": "兩套技能、結繭命中與升空用途",
+        "fantasyThemes": [
+          "蜘蛛",
+          "變形",
+          "黑暗魔法"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Evelynn",
+      "name": "伊芙琳",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Evelynn.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/evelynn/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、偽裝接近",
+        "signatureMechanics": "偽裝繞近，等待魅惑後爆發並後撤",
+        "possibleAppeal": "潛伏、挑選時機的一擊",
+        "learningPressure": "視野、魅惑等待與撤退方向",
+        "fantasyThemes": [
+          "惡魔",
+          "誘惑",
+          "暗影"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ezreal",
+      "name": "伊澤瑞爾",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ezreal.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ezreal/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程技能與普攻",
+        "signatureMechanics": "持續命中能量彈縮短冷卻，瞬移調整位置",
+        "possibleAppeal": "邊移動邊精準射擊",
+        "learningPressure": "技能命中、普攻穿插與瞬移節制",
+        "fantasyThemes": [
+          "探險家",
+          "魔法護手"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Fiddlesticks",
+      "name": "費德提克",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 480,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Fiddlesticks.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/fiddlesticks/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "稻草人視野、隱蔽恐懼與範圍烏鴉風暴",
+        "possibleAppeal": "藏好自己，再帶來集體驚嚇",
+        "learningPressure": "視野布置、進場角度與引導施法",
+        "fantasyThemes": [
+          "遠古恐懼",
+          "稻草人",
+          "烏鴉"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Fiora",
+      "name": "菲歐拉",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Fiora.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/fiora/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "找破綻、格擋反擊並繞行擊中四個方向",
+        "possibleAppeal": "細膩的一對一較量",
+        "learningPressure": "破綻走位、反應格擋與對手知識",
+        "fantasyThemes": [
+          "決鬥家",
+          "細劍",
+          "優雅"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Fizz",
+      "name": "飛斯",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Fizz.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/fizz/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "突進穿刺、躍起避開指定與鯊魚追擊",
+        "possibleAppeal": "用靈巧與欺敵化解危險",
+        "learningPressure": "無法指定時機、進退與魚的命中",
+        "fantasyThemes": [
+          "海洋精怪",
+          "三叉戟",
+          "鯊魚"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Galio",
+      "name": "加里歐",
+      "official": {
+        "classes": [
+          "Tank",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Galio.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/galio/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、法術消耗",
+        "signatureMechanics": "嘲諷承傷、衝撞與遠距離降落支援",
+        "possibleAppeal": "在夥伴遇險時趕到現場",
+        "learningPressure": "支援觀察、嘲諷蓄力與落點",
+        "fantasyThemes": [
+          "石像巨人",
+          "英雄式救援"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Gangplank",
+      "name": "剛普朗克",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Gangplank.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/gangplank/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、槍與桶遠距離爆破",
+        "signatureMechanics": "火藥桶連鎖引爆、射擊與全圖砲擊",
+        "possibleAppeal": "精心布置後引發大爆炸",
+        "learningPressure": "桶的血量節奏、連桶與遠方觀察",
+        "fantasyThemes": [
+          "海盜",
+          "火藥",
+          "艦砲"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Garen",
+      "name": "蓋倫",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Garen.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/garen/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "加速沉默、旋轉攻擊、減傷與指定處決",
+        "possibleAppeal": "直接接戰、完成明確目標",
+        "learningPressure": "接近方式、防禦時機與斬殺血量",
+        "fantasyThemes": [
+          "重甲騎士",
+          "巨劍",
+          "正義"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Gnar",
+      "name": "吶兒",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Gnar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/gnar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠近形態切換",
+        "signatureMechanics": "小型態迴力鏢拉扯，怒氣變身後範圍控場",
+        "possibleAppeal": "靈巧與巨大力量輪流出場",
+        "learningPressure": "怒氣變身時機、雙形態距離",
+        "fantasyThemes": [
+          "可愛野獸",
+          "巨獸",
+          "變形"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Gragas",
+      "name": "古拉格斯",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Gragas.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/gragas/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、酒桶遠投",
+        "signatureMechanics": "酒桶延遲爆炸、衝撞與炸退改變位置",
+        "possibleAppeal": "把對手送到自己想要的位置",
+        "learningPressure": "桶的時間、碰撞與炸退角度",
+        "fantasyThemes": [
+          "酒桶",
+          "豪放",
+          "衝撞"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Graves",
+      "name": "葛雷夫",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 425,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Graves.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/graves/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離普攻",
+        "signatureMechanics": "散彈、裝填、煙幕與衝刺形成近距離射擊循環",
+        "possibleAppeal": "強勁火力與機動周旋",
+        "learningPressure": "子彈阻擋、裝填節奏與近身風險",
+        "fantasyThemes": [
+          "槍手",
+          "散彈槍",
+          "煙幕"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Gwen",
+      "name": "關",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Gwen.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/gwen/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "剪刀中心線、短衝刺與隔絕遠方威脅的聖霧",
+        "possibleAppeal": "在自己的交鋒範圍內精細操作",
+        "learningPressure": "剪擊中心、聖霧邊界與普攻循環",
+        "fantasyThemes": [
+          "人偶",
+          "剪刀",
+          "縫紉魔法"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Hecarim",
+      "name": "赫克林",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Hecarim.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/hecarim/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "跑速轉化火力，衝撞與恐懼騎兵突擊",
+        "possibleAppeal": "高速奔馳、帶頭衝散陣形",
+        "learningPressure": "移動路線、衝撞方向與切入時機",
+        "fantasyThemes": [
+          "幽靈騎兵",
+          "速度",
+          "戰爭"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Heimerdinger",
+      "name": "漢默丁格",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Heimerdinger.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/heimerdinger/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、固定炮臺",
+        "signatureMechanics": "配置炮臺守住區域，選擇強化炮臺或彈藥",
+        "possibleAppeal": "建立自己的據點與防線",
+        "learningPressure": "炮臺布局、守區與強化技能選擇",
+        "fantasyThemes": [
+          "發明家",
+          "炮臺",
+          "科技"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Hwei",
+      "name": "赫威",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Hwei.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/hwei/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "從傷害、增益、控制各組選擇法術組合",
+        "possibleAppeal": "用豐富工具解決不同情境",
+        "learningPressure": "組合記憶、即時選擇與命中",
+        "fantasyThemes": [
+          "畫師",
+          "情緒",
+          "魔法繪畫"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Illaoi",
+      "name": "伊羅旖",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Illaoi.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/illaoi/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、靈魂拉取",
+        "signatureMechanics": "在地形旁建立觸手，拉出靈魂並反擊圍攻",
+        "possibleAppeal": "守住自己的領域、迎接挑戰",
+        "learningPressure": "觸手位置、靈魂命中與敵人進退",
+        "fantasyThemes": [
+          "海神祭司",
+          "觸手",
+          "試煉"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Irelia",
+      "name": "伊瑞莉雅",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 200,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Irelia.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/irelia/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "透過擊殺與標記重置突進，疊攻速持續攻擊",
+        "possibleAppeal": "在多個目標之間連續穿梭",
+        "learningPressure": "士兵血量、標記、雙刃暈眩與路徑",
+        "fantasyThemes": [
+          "舞者",
+          "浮空刀刃"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ivern",
+      "name": "埃爾文",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 475,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ivern.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ivern/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、召喚物",
+        "signatureMechanics": "釋放野怪、造草、給盾並指揮黛西",
+        "possibleAppeal": "照顧夥伴、透過伙伴與環境發揮",
+        "learningPressure": "特殊野區流程、黛西指令與盾的時機",
+        "fantasyThemes": [
+          "森林",
+          "樹人",
+          "石像好友"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Janna",
+      "name": "珍娜",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Janna.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/janna/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "旋風中斷接近，護盾強化與風暴擊退治療",
+        "possibleAppeal": "及時阻止危險靠近夥伴",
+        "learningPressure": "反應中斷、盾的時機與擊退方向",
+        "fantasyThemes": [
+          "風靈",
+          "守護",
+          "風暴"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "JarvanIV",
+      "name": "嘉文四世",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/JarvanIV.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/jarvaniv/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "旗槍位移擊飛，競技場限制敵人活動",
+        "possibleAppeal": "帶頭開路、創造團隊集火空間",
+        "learningPressure": "旗槍連段、進場距離與地形影響",
+        "fantasyThemes": [
+          "皇子",
+          "戰旗",
+          "長槍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Jax",
+      "name": "賈克斯",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Jax.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/jax/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "連續攻擊疊攻速，閃避普攻後暈眩反擊",
+        "possibleAppeal": "反覆磨練決鬥、持續交鋒",
+        "learningPressure": "反擊時機、跳躍目標與長短交戰",
+        "fantasyThemes": [
+          "武器大師",
+          "神祕戰士"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Jayce",
+      "name": "杰西",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Jayce.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/jayce/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠近形態切換",
+        "signatureMechanics": "加速砲消耗，再切換戰鎚接近或擊退",
+        "possibleAppeal": "遠近切換、依局面選工具",
+        "learningPressure": "兩套技能、加速門瞄準與轉形時機",
+        "fantasyThemes": [
+          "發明家",
+          "變形武器",
+          "雷電"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Jhin",
+      "name": "燼",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Jhin.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/jhin/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻與超遠射擊",
+        "signatureMechanics": "四發彈匣、第四發爆發、陷阱與長程狙擊",
+        "possibleAppeal": "有節拍地精準完成每一次出手",
+        "learningPressure": "裝填空窗、第四發與狙擊命中",
+        "fantasyThemes": [
+          "藝術家",
+          "面具",
+          "戲劇"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Jinx",
+      "name": "吉茵珂絲",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Jinx.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/jinx/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "切換槍砲，參與擊殺後大幅加速連續追擊",
+        "possibleAppeal": "累積火力後進入停不下來的狀態",
+        "learningPressure": "安全站位、武器選擇與追擊節制",
+        "fantasyThemes": [
+          "瘋狂發明",
+          "火箭",
+          "混亂"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kaisa",
+      "name": "凱莎",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kaisa.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kaisa/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離普攻、遠程技能",
+        "signatureMechanics": "疊印記、裝備進化，選擇突進收尾位置",
+        "possibleAppeal": "成長進化、抓住瞬間進場",
+        "learningPressure": "進化條件、印記與突進落點",
+        "fantasyThemes": [
+          "虛空共生",
+          "獵手",
+          "進化"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kalista",
+      "name": "克黎思妲",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kalista.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kalista/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、攻擊跳躍",
+        "signatureMechanics": "攻擊間跳步、累積長矛拔出，與誓約夥伴連動",
+        "possibleAppeal": "持續移動、和固定搭檔配合",
+        "learningPressure": "跳步節奏、拔矛血量與誓約溝通",
+        "fantasyThemes": [
+          "復仇幽魂",
+          "長矛",
+          "誓約"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Karma",
+      "name": "卡瑪",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Karma.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/karma/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "真言強化傷害、連結或團隊護盾加速",
+        "possibleAppeal": "依局面切換進攻與支援",
+        "learningPressure": "強化技能選擇、連結距離與隊形",
+        "fantasyThemes": [
+          "精神領袖",
+          "靈能",
+          "均衡"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Karthus",
+      "name": "卡爾瑟斯",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 450,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Karthus.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/karthus/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程落點、近身傷害圈",
+        "signatureMechanics": "連續延遲爆破，死後施法與全圖傷害",
+        "possibleAppeal": "持續施法、跨越距離影響局面",
+        "learningPressure": "落點預判、魔力與全圖血量觀察",
+        "fantasyThemes": [
+          "死靈",
+          "安魂曲",
+          "死亡"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kassadin",
+      "name": "卡薩丁",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kassadin.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kassadin/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、短距離法術",
+        "signatureMechanics": "反覆空間跳躍，連用提高傷害與魔力負擔",
+        "possibleAppeal": "逐步成長後自由穿梭",
+        "learningPressure": "前期生存、魔力與連跳節制",
+        "fantasyThemes": [
+          "虛空",
+          "裂隙",
+          "行者"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Katarina",
+      "name": "卡特蓮娜",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Katarina.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/katarina/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "撿匕首、瞬移，參與擊殺縮短冷卻",
+        "possibleAppeal": "在混戰中連續接手下一個目標",
+        "learningPressure": "匕首位置、控制技能與重置判斷",
+        "fantasyThemes": [
+          "刺客",
+          "匕首",
+          "旋刃"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kayle",
+      "name": "凱爾",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kayle.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kayle/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "隨等級由近轉遠",
+        "signatureMechanics": "升級逐步解鎖攻擊強化，以無敵保護目標",
+        "possibleAppeal": "耐心累積、體驗逐段蛻變",
+        "learningPressure": "前期距離限制、發育與無敵時機",
+        "fantasyThemes": [
+          "天使",
+          "聖火",
+          "審判"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kayn",
+      "name": "慨影",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kayn.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kayn/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "穿牆移動、進入敵人身體，選擇不同變身路線",
+        "possibleAppeal": "探索特殊路徑、選擇成長方向",
+        "learningPressure": "變身資源、路線與兩種形態用途",
+        "fantasyThemes": [
+          "影武者",
+          "冥血鐮刀",
+          "雙面"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kennen",
+      "name": "凱能",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kennen.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kennen/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、近身大範圍法術",
+        "signatureMechanics": "技能印記疊暈，化作雷球後以風暴進場",
+        "possibleAppeal": "靈巧試探後帶來群體衝擊",
+        "learningPressure": "印記層數、能量與風暴切入",
+        "fantasyThemes": [
+          "雷電忍者",
+          "小型角色"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Khazix",
+      "name": "卡力斯",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Khazix.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/khazix/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "針對孤立目標、隱形與技能進化",
+        "possibleAppeal": "挑選落單獵物、定製能力",
+        "learningPressure": "孤立條件、進化選擇與視野",
+        "fantasyThemes": [
+          "虛空獵食者",
+          "進化",
+          "蟲形"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kindred",
+      "name": "鏡爪",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kindred.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kindred/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "標記追獵永久成長，範圍內暫時阻止死亡",
+        "possibleAppeal": "追尋目標、決定生死邊界",
+        "learningPressure": "印記風險、拉距與大絕雙方受益",
+        "fantasyThemes": [
+          "神羊與魔狼",
+          "死亡",
+          "雙生"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Kled",
+      "name": "克雷德",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Kled.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kled/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、下馬後改變",
+        "signatureMechanics": "坐騎代承傷，下馬後累積勇氣重新上馬",
+        "possibleAppeal": "背水一戰、重整後繼續衝鋒",
+        "learningPressure": "坐騎狀態、勇氣與追擊承諾",
+        "fantasyThemes": [
+          "騎乘",
+          "狂戰",
+          "古怪伙伴"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "KogMaw",
+      "name": "寇格魔",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/KogMaw.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/kogmaw/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻與砲擊",
+        "signatureMechanics": "強化射程與百分比傷害，以遠程炮擊補足火力",
+        "possibleAppeal": "在安全位置持續傾瀉火力",
+        "learningPressure": "缺少位移的站位與強化窗口",
+        "fantasyThemes": [
+          "虛空幼獸",
+          "酸液",
+          "砲台"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "KSante",
+      "name": "卡桑帝",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/KSante.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ksante/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "防禦與控制保護陣形，轉為拼死一搏追擊隔離目標",
+        "possibleAppeal": "在守護與決鬥之間切換",
+        "learningPressure": "雙形態技能、牆體與轉形風險",
+        "fantasyThemes": [
+          "獵獸者",
+          "重武器",
+          "變形"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Leblanc",
+      "name": "勒布朗",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Leblanc.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/leblanc/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離爆發",
+        "signatureMechanics": "位移留下返回點、鎖鏈與複製技能連動",
+        "possibleAppeal": "虛實欺敵、進退自如",
+        "learningPressure": "返回點、連段選擇與鎖鏈距離",
+        "fantasyThemes": [
+          "幻術",
+          "分身",
+          "魔女"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "LeeSin",
+      "name": "李星",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/LeeSin.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/leesin/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "兩段技能穿插普攻，接近友敵並踢回目標",
+        "possibleAppeal": "即興操作、改變對手位置",
+        "learningPressure": "能量、目標切換與踢擊方向",
+        "fantasyThemes": [
+          "武僧",
+          "武術",
+          "龍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Leona",
+      "name": "雷歐娜",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Leona.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/leona/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "突進束縛、連續暈眩與防禦強化",
+        "possibleAppeal": "果斷開戰、替夥伴固定目標",
+        "learningPressure": "隊友跟進距離與進場承諾",
+        "fantasyThemes": [
+          "太陽",
+          "重甲",
+          "劍盾"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Lillia",
+      "name": "莉莉亞",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 325,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Lillia.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/lillia/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "邊緣旋擊累積速度，標記多人再使其沉睡",
+        "possibleAppeal": "輕快繞行、聚集一次大型機會",
+        "learningPressure": "移速維持、外圈與睡眠時機",
+        "fantasyThemes": [
+          "鹿妖精",
+          "夢境",
+          "森林"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Lissandra",
+      "name": "麗珊卓",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Lissandra.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/lissandra/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "冰爪位移、群體定身與指定凍結或自保",
+        "possibleAppeal": "限制關鍵目標、凍住混亂局面",
+        "learningPressure": "進場冰爪、自保與控人的取捨",
+        "fantasyThemes": [
+          "冰霜女巫",
+          "黑冰"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Locke",
+      "name": "洛克",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Locke.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/locke/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、野（均待驗證）",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "咒釘標記接普攻，自損換攻速並以位移追擊處決",
+        "possibleAppeal": "用生命換取短時間壓迫與收尾",
+        "learningPressure": "自損回復窗口、標記與切入撤離",
+        "fantasyThemes": [
+          "驅魔師",
+          "咒釘",
+          "燃魂"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Lucian",
+      "name": "路西恩",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Lucian.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/lucian/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離普攻",
+        "signatureMechanics": "技能後雙發射擊，衝刺穿插普攻並配合友軍增益",
+        "possibleAppeal": "快速連打、短距離交鋒",
+        "learningPressure": "技能普攻銜接、衝刺與短射程",
+        "fantasyThemes": [
+          "雙槍",
+          "驅魔",
+          "光明"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Lulu",
+      "name": "露璐",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Lulu.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/lulu/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "皮克斯附身，變形限制或強化友軍，巨大化救援",
+        "possibleAppeal": "讓夥伴更強、打斷敵人的計畫",
+        "learningPressure": "同一技能對友敵用途與目標選擇",
+        "fantasyThemes": [
+          "精靈",
+          "奇幻",
+          "變形"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Lux",
+      "name": "拉克絲",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Lux.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/lux/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "束縛、延遲引爆光區、往返護盾與直線光束",
+        "possibleAppeal": "在遠處精準命中並照顧隊友",
+        "learningPressure": "瞄準、技能連動與保持距離",
+        "fantasyThemes": [
+          "光明",
+          "魔法少女",
+          "光束"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Malphite",
+      "name": "墨菲特",
+      "official": {
+        "classes": [
+          "Tank",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Malphite.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/malphite/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "防禦護盾、降低攻速，以高速撞擊擊飛多人",
+        "possibleAppeal": "承受壓力後用一次撞擊開局",
+        "learningPressure": "大絕目標、距離與隊友位置",
+        "fantasyThemes": [
+          "岩石巨人",
+          "撞擊"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Malzahar",
+      "name": "馬爾札哈",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Malzahar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/malzahar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術、召喚物",
+        "signatureMechanics": "傳染持續傷害、虛靈推進與指定壓制",
+        "possibleAppeal": "讓準備的機制持續運作、鎖定威脅",
+        "learningPressure": "持續傷害傳遞、虛靈存活與壓制站位",
+        "fantasyThemes": [
+          "虛空先知",
+          "蟲群",
+          "精神控制"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Maokai",
+      "name": "茂凱",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Maokai.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/maokai/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、輔、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠程區域控制",
+        "signatureMechanics": "樹苗偵察、纏繞突進與廣域樹牆",
+        "possibleAppeal": "掌握通路、保護或限制整片區域",
+        "learningPressure": "樹苗位置、進場與大絕路徑",
+        "fantasyThemes": [
+          "樹人",
+          "自然",
+          "荊棘"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "MasterYi",
+      "name": "易大師",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/MasterYi.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/masteryi/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "普攻縮短突襲冷卻，冥想減傷與擊殺延長強化",
+        "possibleAppeal": "累積熟練後持續追擊",
+        "learningPressure": "進場前等待控制、突襲與冥想時機",
+        "fantasyThemes": [
+          "劍聖",
+          "冥想",
+          "速度"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Mel",
+      "name": "梅爾",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Mel.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/mel/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔（候選）",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "射彈疊加處決印記，新星攔截射彈並給予友軍增益",
+        "possibleAppeal": "以魔法火力與防禦反擊掌握節奏",
+        "learningPressure": "新星時機、光球命中與印記血量",
+        "fantasyThemes": [
+          "金光",
+          "貴族",
+          "魔法屏障"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Milio",
+      "name": "米里歐",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Milio.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/milio/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "火球擊退、營火治療加射程，護盾與群體解控",
+        "possibleAppeal": "擴大夥伴的發揮空間、即時解除危機",
+        "learningPressure": "保護目標、解控反應與自身距離",
+        "fantasyThemes": [
+          "溫暖火焰",
+          "營火",
+          "伙伴"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "MissFortune",
+      "name": "好運姐",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 1,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/MissFortune.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/missfortune/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "換目標強化攻擊、彈射子彈與錐形彈幕",
+        "possibleAppeal": "尋找漂亮角度、一次覆蓋多人",
+        "learningPressure": "彈射角度、彈幕引導與安全位置",
+        "fantasyThemes": [
+          "海盜",
+          "雙槍",
+          "彈雨"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "MonkeyKing",
+      "name": "悟空",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/MonkeyKing.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/wukong/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "分身與隱形位移，突進並旋轉擊飛",
+        "possibleAppeal": "真假配合、切入擾亂人群",
+        "learningPressure": "分身用途、進場與旋轉控制",
+        "fantasyThemes": [
+          "猴王",
+          "分身",
+          "長棍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Mordekaiser",
+      "name": "魔鬥凱薩",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Mordekaiser.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/mordekaiser/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "持續傷害圈、儲傷護盾，把目標帶入異界決鬥",
+        "possibleAppeal": "主宰近身空間、強制一對一",
+        "learningPressure": "接近目標、護盾回復與隔離選擇",
+        "fantasyThemes": [
+          "亡靈君王",
+          "重甲",
+          "異界"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Morgana",
+      "name": "魔甘娜",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 1,
+        "baseAttackRange": 450,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Morgana.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/morgana/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術、近身鎖鏈",
+        "signatureMechanics": "長時間束縛、持續傷害區與阻擋控制的黑盾",
+        "possibleAppeal": "限制威脅、保住夥伴行動自由",
+        "learningPressure": "束縛命中、黑盾時機與鎖鏈風險",
+        "fantasyThemes": [
+          "墮落天使",
+          "黑暗魔法",
+          "鎖鏈"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Naafiri",
+      "name": "娜菲芮",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Naafiri.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/naafiri/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、獵犬群",
+        "signatureMechanics": "犬群配合標記攻擊，無法指定強化與鎖定追擊",
+        "possibleAppeal": "率領獵犬一起捕獵",
+        "learningPressure": "犬群狀態、切入與追擊後生存",
+        "fantasyThemes": [
+          "冥血獵犬",
+          "群獵",
+          "刀刃"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nami",
+      "name": "娜米",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nami.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nami/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "水泡控場、水流彈跳治療、強化友軍與潮浪",
+        "possibleAppeal": "和夥伴互相接應、掌握攻防節奏",
+        "learningPressure": "水泡預判、彈跳位置與強化時機",
+        "fantasyThemes": [
+          "人魚",
+          "海潮",
+          "治療"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nasus",
+      "name": "納瑟斯",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nasus.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nasus/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "擊殺疊加打擊威力，衰老限制與巨型強化",
+        "possibleAppeal": "耐心累積、感受數值逐步增長",
+        "learningPressure": "補尾刀、前期承壓與接近目標",
+        "fantasyThemes": [
+          "沙漠神祇",
+          "胡狼",
+          "成長"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nautilus",
+      "name": "納帝魯斯",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nautilus.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nautilus/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、鉤錨接近",
+        "signatureMechanics": "鉤錨、普攻定身與追蹤擊飛連續限制",
+        "possibleAppeal": "抓到目標後讓團隊集中處理",
+        "learningPressure": "鉤錨碰撞、進場與保人選擇",
+        "fantasyThemes": [
+          "深海巨人",
+          "重甲",
+          "船錨"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Neeko",
+      "name": "妮可",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Neeko.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/neeko/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術、近身控制",
+        "signatureMechanics": "偽裝單位、分身誘導，隱藏大範圍進場意圖",
+        "possibleAppeal": "出奇制勝、用偽裝創造驚喜",
+        "learningPressure": "偽裝可信度、進場位置與範圍判斷",
+        "fantasyThemes": [
+          "變色龍",
+          "變形",
+          "花朵"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nidalee",
+      "name": "奈德麗",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nidalee.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nidalee/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠近形態切換",
+        "signatureMechanics": "標槍或陷阱標記，轉為美洲獅突進，也可治療",
+        "possibleAppeal": "精準獵捕、兩套能力靈活切換",
+        "learningPressure": "標槍命中、標記追擊與雙形態循環",
+        "fantasyThemes": [
+          "獸形",
+          "標槍",
+          "荒野"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nilah",
+      "name": "淣菈",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 225,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nilah.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nilah/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、短距離延伸攻擊",
+        "signatureMechanics": "短射程揮刃、分享治療護盾、閃避與聚敵",
+        "possibleAppeal": "與夥伴並肩、深入人群釋放力量",
+        "learningPressure": "短射程生存、友軍增益與切入",
+        "fantasyThemes": [
+          "水刃",
+          "歡悅",
+          "神祕力量"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nocturne",
+      "name": "夜曲",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nocturne.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nocturne/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠距離突進",
+        "signatureMechanics": "遮蔽敵方視野後突進，護盾擋技能並恐懼目標",
+        "possibleAppeal": "主動選定獵物、瞬間逼近",
+        "learningPressure": "全圖目標判斷、護盾反應與進場風險",
+        "fantasyThemes": [
+          "夢魘",
+          "黑暗",
+          "利刃"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Nunu",
+      "name": "努努和威朗普",
+      "official": {
+        "classes": [
+          "Tank",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Nunu.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/nunu/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "滾雪球沿路進場、吞噬野怪與蓄力暴風雪",
+        "possibleAppeal": "帶著夥伴四處奔跑、主動幫忙",
+        "learningPressure": "雪球轉向、路線與暴風雪位置",
+        "fantasyThemes": [
+          "孩童與雪人",
+          "冰雪",
+          "友情"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Olaf",
+      "name": "歐拉夫",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Olaf.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/olaf/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "撿斧縮短冷卻，低血量強化並免疫控制追打",
+        "possibleAppeal": "越危急越敢向前、正面突破",
+        "learningPressure": "血量、斧頭路徑與追擊持續條件",
+        "fantasyThemes": [
+          "狂戰士",
+          "雙斧",
+          "不屈"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Orianna",
+      "name": "奧莉安娜",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Orianna.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/orianna/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、獨立球體位置",
+        "signatureMechanics": "球體定位決定傷害、護盾與拉聚範圍",
+        "possibleAppeal": "精確布置、與進場夥伴連動",
+        "learningPressure": "本體和球的位置、魔力與團隊連動",
+        "fantasyThemes": [
+          "機械舞者",
+          "魔法球"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ornn",
+      "name": "鄂爾",
+      "official": {
+        "classes": [
+          "Tank"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ornn.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ornn/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠距離召喚",
+        "signatureMechanics": "就地打造裝備、強化隊友道具與地形擊飛",
+        "possibleAppeal": "長期準備、打造團隊優勢",
+        "learningPressure": "易碎連動、撞牆與召喚物二次撞擊",
+        "fantasyThemes": [
+          "鍛造神",
+          "熔岩",
+          "山羊"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Pantheon",
+      "name": "潘森",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Pantheon.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/pantheon/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、投矛",
+        "signatureMechanics": "強化技能、指定跳暈、盾擋正面與長距離落地",
+        "possibleAppeal": "果斷出擊、在需要時支援",
+        "learningPressure": "強化層數、擋傷方向與支援時機",
+        "fantasyThemes": [
+          "戰士",
+          "長矛",
+          "盾牌"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Poppy",
+      "name": "波比",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Poppy.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/poppy/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "擋衝刺、把目標撞向牆面，蓄力擊飛送離戰場",
+        "possibleAppeal": "否決敵人突進、守住關鍵位置",
+        "learningPressure": "反衝刺反應、牆角與大絕用途",
+        "fantasyThemes": [
+          "小英雄",
+          "巨鎚",
+          "守護"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Pyke",
+      "name": "派克",
+      "official": {
+        "classes": [
+          "Support",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Pyke.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/pyke/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、鉤刺抓取",
+        "signatureMechanics": "偽裝接近、拉人與位移暈眩，處決分享金錢",
+        "possibleAppeal": "主動狩獵、讓收尾回饋隊友",
+        "learningPressure": "技能命中、脆弱身體與處決門檻",
+        "fantasyThemes": [
+          "亡靈刺客",
+          "魚叉",
+          "深海"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Qiyana",
+      "name": "姬亞娜",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Qiyana.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/qiyana/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "借取不同地形元素強化技能，以地形爆發控場",
+        "possibleAppeal": "利用環境、打出變化連段",
+        "learningPressure": "元素選擇、地形與高速連段",
+        "fantasyThemes": [
+          "元素女皇",
+          "環刃",
+          "叢林"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Quinn",
+      "name": "葵恩",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Quinn.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/quinn/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "獵鷹標記、降低視野、彈跳拉距與高速飛行",
+        "possibleAppeal": "獨立行動、快速轉換地點",
+        "learningPressure": "射程拉扯、飛行路線與支援取捨",
+        "fantasyThemes": [
+          "遊俠",
+          "獵鷹",
+          "飛行"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Rakan",
+      "name": "銳空",
+      "official": {
+        "classes": [
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 300,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Rakan.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/rakan/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、頻繁位移",
+        "signatureMechanics": "衝入人群擊飛魅惑，再跳回隊友給盾",
+        "possibleAppeal": "華麗切入、在夥伴之間穿梭",
+        "learningPressure": "隊友距離、控制連段與撤退路線",
+        "fantasyThemes": [
+          "羽翼",
+          "舞者",
+          "魅惑"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Rammus",
+      "name": "拉姆斯",
+      "official": {
+        "classes": [
+          "Tank"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Rammus.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/rammus/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "滾球接近、嘲諷迫使攻擊並反彈普攻傷害",
+        "possibleAppeal": "用堅硬防禦懲罰攻擊自己的人",
+        "learningPressure": "滾球路徑、嘲諷目標與防禦時機",
+        "fantasyThemes": [
+          "披甲生物",
+          "反彈",
+          "滾動"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "RekSai",
+      "name": "雷珂煞",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/RekSai.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/reksai/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、地底形態",
+        "signatureMechanics": "地底感知、隧道改變路線，鑽出擊飛並追擊",
+        "possibleAppeal": "掌握隱藏路徑、追蹤動靜",
+        "learningPressure": "地底視野限制、隧道與怒氣",
+        "fantasyThemes": [
+          "地底獵食者",
+          "異形",
+          "隧道"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Rell",
+      "name": "銳兒",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 0,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Rell.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/rell/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、騎乘形態",
+        "signatureMechanics": "騎乘切換重甲，破盾暈眩並以磁場聚敵",
+        "possibleAppeal": "衝入陣中、替隊伍聚集目標",
+        "learningPressure": "落地承諾、形態切換與隊友跟進",
+        "fantasyThemes": [
+          "金屬騎士",
+          "磁力",
+          "坐騎"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Renata",
+      "name": "睿娜妲．格萊斯克",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Renata.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/renata/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "延遲隊友死亡、標記協作與使敵軍互相攻擊",
+        "possibleAppeal": "操控局勢、給夥伴最後一次機會",
+        "learningPressure": "增益時機、雙方輸出與毒霧路徑",
+        "fantasyThemes": [
+          "生化科技",
+          "權謀",
+          "操控"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Renekton",
+      "name": "雷尼克頓",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Renekton.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/renekton/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "怒氣強化技能，衝刺進退、暈眩與回血",
+        "possibleAppeal": "掌握短時間優勢、正面施壓",
+        "learningPressure": "怒氣分配、換血長短與二段位移",
+        "fantasyThemes": [
+          "巨鱷",
+          "暴君",
+          "狂怒"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Rengar",
+      "name": "雷葛爾",
+      "official": {
+        "classes": [
+          "Assassin",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Rengar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/rengar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、草叢跳躍",
+        "signatureMechanics": "草叢撲擊、殘虐強化技能與偽裝追獵",
+        "possibleAppeal": "埋伏、選定獵物後爆發",
+        "learningPressure": "草叢路徑、殘虐選擇與連段",
+        "fantasyThemes": [
+          "獅形獵人",
+          "戰利品",
+          "獵殺"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Riven",
+      "name": "雷玟",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Riven.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/riven/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "三段劍擊、短衝刺護盾與普攻交織連段",
+        "possibleAppeal": "長期磨練連段與臨場變化",
+        "learningPressure": "技能普攻銜接、三段位移與距離",
+        "fantasyThemes": [
+          "斷刃",
+          "劍士",
+          "符文"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Rumble",
+      "name": "藍寶",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Rumble.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/rumble/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "管理熱能強化技能，火焰與直線火牆控場",
+        "possibleAppeal": "把機械推到臨界點、切割戰場",
+        "learningPressure": "熱能、過熱窗口與火牆方向",
+        "fantasyThemes": [
+          "機甲",
+          "火焰",
+          "發明家"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ryze",
+      "name": "雷茲",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ryze.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ryze/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離連續法術",
+        "signatureMechanics": "印記改變連招效果，群體傳送移動隊伍",
+        "possibleAppeal": "研究施法順序、帶隊改變位置",
+        "learningPressure": "連招分支、魔力、短射程與傳送溝通",
+        "fantasyThemes": [
+          "符文法師",
+          "卷軸",
+          "空間"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Samira",
+      "name": "煞蜜拉",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Samira.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/samira/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程與近戰交織",
+        "signatureMechanics": "不同招式疊評級、擋射彈，再近身傾瀉彈幕",
+        "possibleAppeal": "華麗連段、在危險中心表演",
+        "learningPressure": "評級、進場等待與擊殺重置",
+        "fantasyThemes": [
+          "槍劍",
+          "傭兵",
+          "張揚"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sejuani",
+      "name": "史瓦妮",
+      "official": {
+        "classes": [
+          "Tank"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sejuani.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sejuani/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、遠程投擲控制",
+        "signatureMechanics": "撞擊、冰霜疊層與長程冰鏈，搭配近戰友軍",
+        "possibleAppeal": "帶頭固定目標、和隊友連控",
+        "learningPressure": "疊層配合、大絕命中與進場",
+        "fantasyThemes": [
+          "冰霜戰士",
+          "野豬坐騎"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Senna",
+      "name": "姍娜",
+      "official": {
+        "classes": [
+          "Support",
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 600,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Senna.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/senna/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "收集靈魂增長射程，射擊兼治療並全圖給盾",
+        "possibleAppeal": "同時照顧夥伴與成長為火力",
+        "learningPressure": "慢速攻擊、靈魂取得與射線對齊",
+        "fantasyThemes": [
+          "光影",
+          "巨砲",
+          "亡魂"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Seraphine",
+      "name": "瑟菈紛",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 0,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Seraphine.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/seraphine/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、下、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "重複施法、群體護盾治療與可延長的魅惑聲波",
+        "possibleAppeal": "讓多人一起發揮、層層接力",
+        "learningPressure": "回聲次數、友軍位置與控制銜接",
+        "fantasyThemes": [
+          "歌手",
+          "音樂",
+          "共鳴"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sett",
+      "name": "賽特",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sett.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sett/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "承傷累積重拳，拉聚兩側目標並抱摔敵人",
+        "possibleAppeal": "承受壓力後以重拳回應",
+        "learningPressure": "承傷量、重拳中心與抱摔方向",
+        "fantasyThemes": [
+          "拳鬥士",
+          "力量",
+          "街頭"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Shaco",
+      "name": "薩科",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Shaco.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/shaco/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、陷阱與分身",
+        "signatureMechanics": "隱形背刺、盒子恐懼與可指揮分身",
+        "possibleAppeal": "欺敵、提前布置讓人踩入圈套",
+        "learningPressure": "陷阱準備、分身指令與撤退",
+        "fantasyThemes": [
+          "惡魔小丑",
+          "玩偶",
+          "詭計"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Shen",
+      "name": "慎",
+      "official": {
+        "classes": [
+          "Tank"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Shen.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/shen/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、跨圖支援",
+        "signatureMechanics": "靈刃位置決定攻擊強化，格擋普攻並傳送保人",
+        "possibleAppeal": "守住自己位置也留意遠方夥伴",
+        "learningPressure": "靈刃、嘲諷與跨圖支援取捨",
+        "fantasyThemes": [
+          "忍者",
+          "靈刃",
+          "守護"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Shyvana",
+      "name": "希瓦娜",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Shyvana.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/shyvana/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上（候選）",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、龍焰遠射",
+        "signatureMechanics": "累積防禦層數，護盾與變龍強化基礎技能",
+        "possibleAppeal": "累積後化龍、以體型與火力壓迫",
+        "learningPressure": "變身窗口、近身與龍焰選擇",
+        "fantasyThemes": [
+          "龍人",
+          "火焰",
+          "變形"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Singed",
+      "name": "辛吉德",
+      "official": {
+        "classes": [
+          "Tank",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Singed.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/singed/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、身後持續毒霧",
+        "signatureMechanics": "移動留下毒路，膠水限制位移並過肩摔",
+        "possibleAppeal": "設計追逐路線、擾亂敵方節奏",
+        "learningPressure": "路線、仇恨與甩人位置",
+        "fantasyThemes": [
+          "鍊金術",
+          "毒霧",
+          "古怪"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sion",
+      "name": "賽恩",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sion.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sion/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "蓄力重擊、擊殺永久加生命與可轉向長途衝撞",
+        "possibleAppeal": "成為厚重前線、累積持久存在感",
+        "learningPressure": "蓄力被打斷、衝撞轉向與生命管理",
+        "fantasyThemes": [
+          "不死巨人",
+          "重斧",
+          "衝撞"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sivir",
+      "name": "希維爾",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sivir.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sivir/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "彈射清理密集目標，法術盾與團隊加速",
+        "possibleAppeal": "有效率清理、帶大家一起移動",
+        "learningPressure": "護盾反應、短射程與團隊加速時機",
+        "fantasyThemes": [
+          "傭兵",
+          "迴旋刃",
+          "沙漠"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Skarner",
+      "name": "史加納",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Skarner.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/skarner/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "舉石強化攻擊，穿牆撞人並以尾刺拖走目標",
+        "possibleAppeal": "穿越地形、搬移關鍵敵人",
+        "learningPressure": "穿牆路線、撞牆角度與拖行方向",
+        "fantasyThemes": [
+          "巨蠍",
+          "岩石",
+          "原始力量"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Smolder",
+      "name": "史矛德",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Smolder.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/smolder/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程技能與普攻",
+        "signatureMechanics": "疊層增強龍息，短暫飛行與召喚母親吐息",
+        "possibleAppeal": "照顧幼龍成長、逐步擴張火力",
+        "learningPressure": "堆層效率、站位與飛行保留",
+        "fantasyThemes": [
+          "幼龍",
+          "火焰",
+          "家庭"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sona",
+      "name": "索娜",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sona.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sona/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術、近身靈氣",
+        "signatureMechanics": "切換治療、傷害和加速靈氣，選擇強化普攻效果",
+        "possibleAppeal": "讓團隊持續受益、掌握施法節奏",
+        "learningPressure": "光環距離、魔力與強化普攻選擇",
+        "fantasyThemes": [
+          "琴師",
+          "音樂",
+          "守護"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Soraka",
+      "name": "索拉卡",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Soraka.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/soraka/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "以自身生命治療，命中敵人回復並全圖救援",
+        "possibleAppeal": "即時照顧、把危機中的人拉回來",
+        "learningPressure": "自身生命、敵方切入與全圖觀察",
+        "fantasyThemes": [
+          "星辰",
+          "治癒",
+          "犧牲"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Swain",
+      "name": "斯溫",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Swain.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/swain/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔、下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "拉回敵人收集靈魂，變身吸取周圍生命",
+        "possibleAppeal": "在混戰中持續存在、掌控區域",
+        "learningPressure": "控制命中、吸血距離與進退",
+        "fantasyThemes": [
+          "惡魔",
+          "渡鴉",
+          "統帥"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Sylas",
+      "name": "賽勒斯",
+      "official": {
+        "classes": [
+          "Mage",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Sylas.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/sylas/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "技能與強化普攻穿插，回血並偷用敵方大絕",
+        "possibleAppeal": "依對手改變工具、臨場發揮",
+        "learningPressure": "敵方大絕知識、連段與回血時機",
+        "fantasyThemes": [
+          "鎖鏈",
+          "反叛",
+          "奪取魔法"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Syndra",
+      "name": "星朵拉",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Syndra.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/syndra/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "布置黑暗星體、推球暈眩並集中球體爆發",
+        "possibleAppeal": "精確控制位置、累積一次強攻",
+        "learningPressure": "球的位置、推球角度與成長碎片",
+        "fantasyThemes": [
+          "黑暗魔法",
+          "念力",
+          "星體"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "TahmKench",
+      "name": "貪啃奇",
+      "official": {
+        "classes": [
+          "Tank",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/TahmKench.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/tahmkench/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "舔擊回血、灰血護盾，吞下隊友保護或吞敵",
+        "possibleAppeal": "厚實承傷、把夥伴從危險中帶走",
+        "learningPressure": "層數、護盾轉換與吞吐方向",
+        "fantasyThemes": [
+          "河流巨怪",
+          "吞噬",
+          "契約"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Taliyah",
+      "name": "塔莉雅",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Taliyah.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/taliyah/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術",
+        "signatureMechanics": "移動投石、推人進石陣，長牆改變路線",
+        "possibleAppeal": "以地形與移動控制戰局",
+        "learningPressure": "推石連段、變動領域與支援路線",
+        "fantasyThemes": [
+          "岩石",
+          "織造",
+          "衝浪"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Talon",
+      "name": "塔隆",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Talon.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/talon/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "翻越地形、技能疊流血，隱形環刃切入",
+        "possibleAppeal": "快速換路線、尋找突然出現的角度",
+        "learningPressure": "翻牆冷卻、連段與離場路線",
+        "fantasyThemes": [
+          "刺客",
+          "袖刃",
+          "跑酷"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Taric",
+      "name": "塔里克",
+      "official": {
+        "classes": [
+          "Support",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Taric.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/taric/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、連結投射技能",
+        "signatureMechanics": "普攻刷新技能，與夥伴連結複製施法並延遲無敵",
+        "possibleAppeal": "並肩作戰、共同撐過關鍵時刻",
+        "learningPressure": "普攻循環、雙點暈眩與無敵預判",
+        "fantasyThemes": [
+          "寶石",
+          "星辰",
+          "守護者"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Teemo",
+      "name": "提摩",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 500,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Teemo.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/teemo/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻、陷阱",
+        "signatureMechanics": "毒性攻擊、致盲與隱形蘑菇控制通路",
+        "possibleAppeal": "探索布置、讓準備持續產生效果",
+        "learningPressure": "安全距離、蘑菇布局與路線選擇",
+        "fantasyThemes": [
+          "小型斥候",
+          "蘑菇",
+          "毒素"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Thresh",
+      "name": "瑟雷西",
+      "official": {
+        "classes": [
+          "Support",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 450,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Thresh.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/thresh/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離、鉤鎖",
+        "signatureMechanics": "鉤人、位移打斷與燈籠接回夥伴",
+        "possibleAppeal": "攻防兩用、創造特殊救援路線",
+        "learningPressure": "鉤子選擇、燈籠溝通與反應位移",
+        "fantasyThemes": [
+          "幽魂獄卒",
+          "鎖鏈",
+          "燈籠"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Tristana",
+      "name": "崔絲塔娜",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Tristana.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/tristana/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "疊加炸彈、跳躍追擊重置與擊退自保",
+        "possibleAppeal": "積極找機會、連續推進",
+        "learningPressure": "炸彈層數、跳躍重置與落點",
+        "fantasyThemes": [
+          "小型砲手",
+          "火箭跳躍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Trundle",
+      "name": "特朗德",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Trundle.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/trundle/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "偷攻擊與防禦，冰柱改變通道並提高自身攻速",
+        "possibleAppeal": "正面較量、削弱強敵後接管",
+        "learningPressure": "冰柱卡位、偷取目標與追擊距離",
+        "fantasyThemes": [
+          "巨魔",
+          "寒冰",
+          "掠奪"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Tryndamere",
+      "name": "泰達米爾",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Tryndamere.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/tryndamere/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "怒氣強化暴擊，旋轉接近與短時間免死",
+        "possibleAppeal": "在危險邊緣持續決鬥",
+        "learningPressure": "怒氣、免死秒數與撤退時機",
+        "fantasyThemes": [
+          "蠻王",
+          "大劍",
+          "不屈"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "TwistedFate",
+      "name": "逆命",
+      "official": {
+        "classes": [
+          "Mage",
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/TwistedFate.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/twistedfate/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻與法術",
+        "signatureMechanics": "選牌切換用途，揭露敵方位置並傳送",
+        "possibleAppeal": "觀察全局、在關鍵地點出現",
+        "learningPressure": "選牌節拍、地圖觀察與落點",
+        "fantasyThemes": [
+          "紙牌",
+          "賭徒",
+          "命運"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Twitch",
+      "name": "圖奇",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Twitch.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/twitch/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻、偽裝接近",
+        "signatureMechanics": "偽裝改變接近角度，穿透射擊與毒層引爆",
+        "possibleAppeal": "隱藏火力、突然找到成排目標",
+        "learningPressure": "現身時機、射線角度與脆弱站位",
+        "fantasyThemes": [
+          "瘟疫鼠",
+          "毒液",
+          "伏擊"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Udyr",
+      "name": "烏迪爾",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Udyr.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/udyr/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、四種姿態",
+        "signatureMechanics": "切換姿態並覺醒其中一種，攻擊穿插護盾與控制",
+        "possibleAppeal": "依局面調整狀態、持續追逐",
+        "learningPressure": "姿態循環、覺醒選擇與接近路線",
+        "fantasyThemes": [
+          "獸靈",
+          "武術",
+          "自然"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Urgot",
+      "name": "烏爾加特",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 350,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Urgot.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/urgot/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "短射程普攻",
+        "signatureMechanics": "六腳方向火力、連射、翻摔與低血量拖拽處決",
+        "possibleAppeal": "厚重火力、把目標一步步逼入終局",
+        "learningPressure": "繞行觸發腿砲、翻摔與處決血量",
+        "fantasyThemes": [
+          "生化改造",
+          "多足",
+          "重火力"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Varus",
+      "name": "法洛士",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 575,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Varus.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/varus/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻與蓄力箭",
+        "signatureMechanics": "毒層連動技能，蓄力遠射與蔓延禁錮",
+        "possibleAppeal": "精準長射與連續攻擊間切換",
+        "learningPressure": "毒層、蓄力瞄準與無位移站位",
+        "fantasyThemes": [
+          "冥血弓手",
+          "腐化",
+          "復仇"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Vayne",
+      "name": "汎",
+      "official": {
+        "classes": [
+          "Marksman",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Vayne.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/vayne/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離普攻",
+        "signatureMechanics": "三擊真傷、翻滾隱形與釘牆擊退",
+        "possibleAppeal": "細膩操作、對強大目標完成反擊",
+        "learningPressure": "短射程、翻滾、釘牆與持續走位",
+        "fantasyThemes": [
+          "暗夜獵手",
+          "弩箭",
+          "潛行"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Veigar",
+      "name": "維迦",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Veigar.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/veigar/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "永久累積魔法力量，牢籠封路並以爆發收尾",
+        "possibleAppeal": "一點一滴成長、最後釋放巨力",
+        "learningPressure": "堆層、牢籠邊界與延遲落點",
+        "fantasyThemes": [
+          "小型黑法師",
+          "邪惡魔法"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Velkoz",
+      "name": "威寇茲",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Velkoz.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/velkoz/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "分裂射線、三層分解與引導雷射",
+        "possibleAppeal": "計算角度、完成精準分解",
+        "learningPressure": "幾何瞄準、疊層與引導時安全",
+        "fantasyThemes": [
+          "虛空之眼",
+          "研究",
+          "雷射"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Vex",
+      "name": "薇可絲",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 0,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Vex.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/vex/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中距離法術、遠距離切入",
+        "signatureMechanics": "儲存恐懼打斷位移，命中黯影後追擊",
+        "possibleAppeal": "反制冒進、抓準機會追擊",
+        "learningPressure": "恐懼保留、大絕命中與進場判斷",
+        "fantasyThemes": [
+          "陰鬱",
+          "小型法師",
+          "黯影"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Vi",
+      "name": "菲艾",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Vi.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/vi/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "蓄力衝拳、破甲與指定衝撞擊飛",
+        "possibleAppeal": "鎖定關鍵目標、果斷突破",
+        "learningPressure": "衝拳蓄力、隊友跟進與離場",
+        "fantasyThemes": [
+          "巨型拳套",
+          "執法",
+          "力量"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Viego",
+      "name": "維爾戈",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 200,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Viego.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/viego/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "擊倒敵人後附身使用其能力，再跳向下一目標",
+        "possibleAppeal": "變成對手、連續接管混戰",
+        "learningPressure": "多英雄技能知識、附身選擇與重置",
+        "fantasyThemes": [
+          "亡國君王",
+          "附身",
+          "黯霧"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Viktor",
+      "name": "維克特",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 9,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Viktor.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/viktor/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "碎片進化技能，重力場、畫線雷射與可引導風暴",
+        "possibleAppeal": "研究升級、逐漸完善自己的工具",
+        "learningPressure": "雷射操作、區域預判與升級順序",
+        "fantasyThemes": [
+          "奧術與機械",
+          "進化",
+          "雷射"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Vladimir",
+      "name": "弗拉迪米爾",
+      "official": {
+        "classes": [
+          "Mage",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 450,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Vladimir.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/vladimir/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "中近距離法術",
+        "signatureMechanics": "吸血循環、蓄力血潮與血池避險",
+        "possibleAppeal": "用生命作資源、在危機中回復",
+        "learningPressure": "強化吸血窗口、血量與血池保留",
+        "fantasyThemes": [
+          "血液魔法",
+          "貴族",
+          "不死"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Volibear",
+      "name": "弗力貝爾",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 150,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Volibear.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/volibear/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "雷電連擊、重複撕咬回血，躍擊暫停敵塔",
+        "possibleAppeal": "壓迫向前、以巨獸力量突破",
+        "learningPressure": "重複命中目標、落雷與躍擊時機",
+        "fantasyThemes": [
+          "雷霆巨熊",
+          "荒野",
+          "神祇"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Warwick",
+      "name": "沃維克",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 3,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Warwick.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/warwick/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "追蹤低血量氣味、吸血撕咬與壓制撲擊",
+        "possibleAppeal": "追尋獵物、在殘血交鋒中反撲",
+        "learningPressure": "追擊節制、撲擊方向與咬住時機",
+        "fantasyThemes": [
+          "狼人",
+          "血獵",
+          "化學改造"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Xayah",
+      "name": "剎雅",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Xayah.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/xayah/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "攻擊留下羽刃，召回形成傷害與定身",
+        "possibleAppeal": "預先留下退路、讓追兵受制",
+        "learningPressure": "羽毛幾何位置、召回與升空自保",
+        "fantasyThemes": [
+          "羽翼",
+          "反叛",
+          "刀羽"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Xerath",
+      "name": "齊勒斯",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 525,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Xerath.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/xerath/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "超遠程法術",
+        "signatureMechanics": "蓄力光束、落點轟炸與遠距離引導射擊",
+        "possibleAppeal": "維持距離、精準遠程砲擊",
+        "learningPressure": "瞄準、魔力、無位移與開大位置",
+        "fantasyThemes": [
+          "純粹奧能",
+          "飛升",
+          "光束"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "XinZhao",
+      "name": "趙信",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/XinZhao.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/xinzhao/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "突進三擊擊飛，大絕排開其他敵人並抵擋遠方傷害",
+        "possibleAppeal": "直接接戰、守住一小塊交鋒空間",
+        "learningPressure": "目標選擇、第三擊與大絕邊界",
+        "fantasyThemes": [
+          "長槍武者",
+          "護衛",
+          "決鬥"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Yasuo",
+      "name": "犽宿",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 10,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Yasuo.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/yasuo/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "借單位連續衝刺、風牆擋彈與擊飛接大絕",
+        "possibleAppeal": "穿梭交鋒、把熟練操作連成一氣",
+        "learningPressure": "兵線路徑、擊飛條件與風牆反應",
+        "fantasyThemes": [
+          "浪人",
+          "疾風",
+          "武士刀"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Yone",
+      "name": "犽凝",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Yone.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/yone/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "靈體暫時出擊後返回，蓄風突進與直線聚敵",
+        "possibleAppeal": "短時間深入敵陣，再回到起點",
+        "learningPressure": "靈體倒數、返回位置與連段落點",
+        "fantasyThemes": [
+          "雙刀",
+          "靈魂",
+          "獵魔"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Yorick",
+      "name": "約瑞科",
+      "official": {
+        "classes": [
+          "Fighter",
+          "Tank"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Yorick.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/yorick/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、召喚物",
+        "signatureMechanics": "霧行者與女士作戰，屍牆困人並標記集火",
+        "possibleAppeal": "帶領小軍隊、持續推進自己的路線",
+        "learningPressure": "召喚物生存、兵線與分頭行動",
+        "fantasyThemes": [
+          "掘墓人",
+          "亡靈軍團"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Yunara",
+      "name": "尤娜拉",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 575,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Yunara.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/yunara/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程普攻",
+        "signatureMechanics": "攻速與擴散攻擊，超凡狀態升級技能並解鎖衝刺",
+        "possibleAppeal": "持續射擊、在強化期間加速發揮",
+        "learningPressure": "普攻走位與超凡狀態前後差異",
+        "fantasyThemes": [
+          "巫女",
+          "靈珠",
+          "修行"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Yuumi",
+      "name": "悠咪",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 425,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Yuumi.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/yuumi/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、附著友軍",
+        "signatureMechanics": "附著移動、導引飛彈、護盾與治療並強化摯友",
+        "possibleAppeal": "和固定夥伴同行、維持增益",
+        "learningPressure": "附著依賴、目標選擇與增益時機",
+        "fantasyThemes": [
+          "魔法貓",
+          "魔法書",
+          "同行"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zaahen",
+      "name": "薩亨",
+      "official": {
+        "classes": [
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 2,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zaahen.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zaahen/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "上、野（候選）",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰",
+        "signatureMechanics": "持續交鋒疊決心，滿層可復活，拉人與回血",
+        "possibleAppeal": "堅持交鋒、以續戰與復起回應壓力",
+        "learningPressure": "決心窗口、連續命中與復活條件",
+        "fantasyThemes": [
+          "冥血神祇",
+          "大刀",
+          "不屈"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zac",
+      "name": "札克",
+      "official": {
+        "classes": [
+          "Tank",
+          "Fighter"
+        ],
+        "dataDragonDifficulty": 8,
+        "baseAttackRange": 175,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zac.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zac/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "野、上",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、長距離彈射",
+        "signatureMechanics": "蓄力彈射進場，撿組織回血並拉撞兩個目標",
+        "possibleAppeal": "從意想不到角度進場、持續干擾",
+        "learningPressure": "蓄力落點、組織位置與雙目標選擇",
+        "fantasyThemes": [
+          "軟泥",
+          "彈跳",
+          "重組"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zed",
+      "name": "劫",
+      "official": {
+        "classes": [
+          "Assassin"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 125,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zed.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zed/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "近戰、影分身遠投",
+        "signatureMechanics": "本體與影子共同施法、換位並延遲引爆標記",
+        "possibleAppeal": "多點布局、完成精準刺殺後離場",
+        "learningPressure": "影子位置、能量與傷害計算",
+        "fantasyThemes": [
+          "影忍",
+          "分身",
+          "手裡劍"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zeri",
+      "name": "婕莉",
+      "official": {
+        "classes": [
+          "Marksman"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zeri.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zeri/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程瞄準射擊",
+        "signatureMechanics": "以方向射擊作普攻，充能、滑牆與超載加速",
+        "possibleAppeal": "持續移動瞄準、高速滑行",
+        "learningPressure": "連續瞄準、地形與速度維持",
+        "fantasyThemes": [
+          "電能",
+          "街頭",
+          "速度"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Ziggs",
+      "name": "希格斯",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 4,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Ziggs.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/ziggs/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中、下",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "彈跳炸彈、雷區、炸藥包與遠距離巨型炸彈",
+        "possibleAppeal": "遠距離轟炸、拆除與區域布置",
+        "learningPressure": "彈跳軌跡、炸藥包方向與落點",
+        "fantasyThemes": [
+          "爆破專家",
+          "炸彈",
+          "混亂"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zilean",
+      "name": "極靈",
+      "official": {
+        "classes": [
+          "Support",
+          "Mage"
+        ],
+        "dataDragonDifficulty": 6,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zilean.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zilean/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術",
+        "signatureMechanics": "雙炸彈暈眩、加速或減速，預放復活結界",
+        "possibleAppeal": "操縱節奏、替夥伴保留重來機會",
+        "learningPressure": "雙炸彈命中、技能刷新與復活預判",
+        "fantasyThemes": [
+          "時間",
+          "老法師",
+          "復活"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zoe",
+      "name": "柔依",
+      "official": {
+        "classes": [
+          "Mage"
+        ],
+        "dataDragonDifficulty": 5,
+        "baseAttackRange": 550,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zoe.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zoe/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程法術、短暫傳送",
+        "signatureMechanics": "改向飛星、催眠，撿取技能碎片與暫時換位",
+        "possibleAppeal": "出其不意、把偶然機會變成招式",
+        "learningPressure": "飛星路徑、碎片與強制返回位置",
+        "fantasyThemes": [
+          "星靈",
+          "童趣",
+          "傳送"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    },
+    {
+      "id": "Zyra",
+      "name": "枷蘿",
+      "official": {
+        "classes": [
+          "Mage",
+          "Support"
+        ],
+        "dataDragonDifficulty": 7,
+        "baseAttackRange": 575,
+        "sources": {
+          "dataDragon": "https://ddragon.leagueoflegends.com/cdn/16.22.1/data/zh_TW/champion/Zyra.json",
+          "championPage": "https://www.leagueoflegends.com/zh-tw/champions/zyra/"
+        }
+      },
+      "analysis": {
+        "candidateLanes": "輔、中",
+        "laneStatus": "editorial_candidate_requires_patch_validation",
+        "combatDistance": "遠程、固定植物",
+        "signatureMechanics": "種子與法術組合長出植物，藤蔓定身與叢林擊飛",
+        "possibleAppeal": "預先播種、讓區域持續替自己作戰",
+        "learningPressure": "種子位置、植物用途與脆弱站位",
+        "fantasyThemes": [
+          "植物",
+          "荊棘",
+          "自然"
+        ],
+        "evidence": [
+          "passive",
+          "Q",
+          "W",
+          "E",
+          "R"
+        ],
+        "preferenceMappingStatus": "hypothesis_requires_playtesting"
+      }
+    }
+  ]
+}

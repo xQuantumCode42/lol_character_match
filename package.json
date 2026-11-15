@@ -1,0 +1,51 @@
+{
+  "name": "rift-compass",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "透過日常與奇幻偏好，探索英雄聯盟的位置與英雄。",
+  "main": "electron/main.cjs",
+  "author": "Rift Compass",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run typecheck && vite build",
+    "package:win": "npm run build && electron-builder --win portable --x64",
+    "test:desktop": "node scripts/verify-desktop.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.73.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "electron": "45.3.2",
+    "electron-builder": "26.18.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "build": {
+    "appId": "dev.riftcompass.desktop",
+    "productName": "Rift Compass",
+    "asar": true,
+    "directories": { "output": "release/0.1.0" },
+    "files": ["dist/**/*", "electron/main.cjs", "package.json"],
+    "win": {
+      "target": ["portable"],
+      "artifactName": "Rift Compass ${version}.exe",
+      "signExecutable": false,
+      "icon": "build/icon.ico"
+    },
+    "portable": { "requestExecutionLevel": "user" }
+  }
+}

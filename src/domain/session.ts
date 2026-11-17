@@ -1,3 +1,4 @@
+import { completeSession } from "./history";
 import { questions } from "../data/questions";
 import type { Answers, Question, Session } from "./types";
 
@@ -45,7 +46,7 @@ export function selectOption(
 }
 
 export function createSession(): Session {
-  return { version: 1, answers: {}, questionIndex: 0, screen: "home" };
+  return { version: 1, historyVersion: 1, answers: {}, questionIndex: 0, screen: "home" };
 }
 
 export function restoreSession(raw: string | null): Session {
@@ -80,7 +81,13 @@ export function restoreSession(raw: string | null): Session {
       : "home";
     if (saved.screen === "home") screen = "home";
     if (saved.screen === "results" && firstMissing === -1) screen = "results";
-    return { version: 1, answers, questionIndex: index, screen };
+    const session: Session = { version: 1, historyVersion: 1, answers, questionIndex: index, screen };
+    if (Array.isArray(saved.pendingRecords)) session.pendingRecords = saved.pendingRecords;
+    if (saved.completion && typeof saved.completion.id === "string" && saved.completion.result &&
+        JSON.stringify(saved.completion.answers) === JSON.stringify(answers)) session.completion = saved.completion;
+    // Legacy complete sessions have no known completion time, even on home/review.
+    if (firstMissing === -1 && !session.completion && saved.historyVersion !== 1) return { ...completeSession(session, null), screen };
+    return session;
   } catch {
     return createSession();
   }

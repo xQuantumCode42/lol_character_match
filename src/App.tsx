@@ -20,6 +20,9 @@ import type { Session } from "./domain/types";
 import { Quiz } from "./components/Quiz";
 import { Results } from "./components/Results";
 import { Modal } from "./components/Modal";
+import { HistoryPages } from "./components/HistoryPages";
+import { HistoryResultBoundary } from "./components/HistoryResultBoundary";
+import { completeSession, historyDate, type HistoryRecord } from "./domain/history";
 
 const storageKey = "rift-compass.session.v1";
 
@@ -31,6 +34,11 @@ export function App() {
       return createSession();
     }
   });
+  const [page, setPage] = useState<"quiz" | "history" | "settings" | "record">("quiz");
+  const [viewedRecord, setViewedRecord] = useState<HistoryRecord | null>(null);
+  const [historyError, setHistoryError] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [retry, setRetry] = useState(0);
   const [storageError, setStorageError] = useState(false);
   const [about, setAbout] = useState(false);
   const [reset, setReset] = useState(false);
@@ -45,7 +53,22 @@ export function App() {
     } catch {
       setStorageError(true);
     }
-  }, [session]);
+    const api = window.riftHistory;
+    if (!api || !session.pendingRecords?.length) { setSaving(false); return; }
+    let active = true;
+    setSaving(true);
+    setHistoryError("");
+    (async () => {
+      for (const record of session.pendingRecords || []) {
+        if (!active) return;
+        await api.save(record);
+        if (!active) return;
+        setSession(previous => ({ ...previous, pendingRecords: previous.pendingRecords?.filter(item => item.id !== record.id) }));
+      }
+    })().catch(reason => { if (active) setHistoryError(String(reason)); })
+      .finally(() => { if (active) setSaving(false); });
+    return () => { active = false; };
+  }, [session, retry]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -58,22 +81,21 @@ export function App() {
       );
       return {
         ...previous,
-        screen: isComplete(previous.answers) ? "results" : "quiz",
+        ...(isComplete(previous.answers) ? completeSession(previous) : { screen: "quiz" as const }),
         questionIndex: firstMissing < 0 ? previous.questionIndex : firstMissing,
       };
     });
   const updateAnswer = (id: string) =>
     setSession((previous) => {
       const question = questions[previous.questionIndex];
+      const selected = selectOption(question, previous.answers[question.id] || [], id);
+      if (JSON.stringify(selected) === JSON.stringify(previous.answers[question.id])) return previous;
       return {
         ...previous,
+        completion: undefined,
         answers: {
           ...previous.answers,
-          [question.id]: selectOption(
-            question,
-            previous.answers[question.id] || [],
-            id,
-          ),
+          [question.id]: selected,
         },
       };
     });
@@ -83,9 +105,10 @@ export function App() {
       <header className="app-header">
         <button
           className="brand"
-          onClick={() =>
-            setSession((previous) => ({ ...previous, screen: "home" }))
-          }
+          onClick={() => {
+            setPage("quiz");
+            setSession(previous => ({ ...previous, screen: "home" }));
+          }}
           aria-label="召喚本色首頁"
         >
           <span className="brand-mark">
@@ -96,6 +119,8 @@ export function App() {
           </span>
         </button>
         <div className="header-actions">
+          <button className="text-button" onClick={() => setPage("history")}>歷史紀錄</button>
+          <button className="text-button" onClick={() => setPage("settings")}>設定</button>
           {session.screen !== "home" && (
             <button className="text-button" onClick={() => setReset(true)}>
               <RotateCcw size={14} />
@@ -111,13 +136,30 @@ export function App() {
         </div>
       </header>
 
+      {historyError && <div className="storage-notice" role="alert">歷史紀錄尚未保存：{historyError}
+        <button className="text-button" onClick={() => setRetry(value => value + 1)}>重試保存</button>
+      </div>}
+      {saving && <div className="storage-notice" role="status">正在保存歷史紀錄…</div>}
+      {page === "quiz" && session.screen === "results" && !window.riftHistory && <div className="storage-notice">歷史紀錄請使用桌面版，瀏覽器可繼續測驗。</div>}
+      {(page === "history" || page === "settings") && <HistoryPages page={page} revision={session.pendingRecords}
+        onHome={() => { setPage("quiz"); setSession(previous => ({ ...previous, screen: "home" })); }}
+        onOpen={record => { setViewedRecord(record); setPage("record"); }} />}
+      {page === "record" && viewedRecord && <>
+        <div className="history-toolbar"><span>{historyDate(viewedRecord.completedAt)}</span>
+          <button className="secondary-button" onClick={() => setPage("history")}>返回歷史紀錄</button>
+          <button className="secondary-button" onClick={() => { setPage("quiz"); setSession(previous => ({ ...previous, screen: "home" })); }}>返回測驗首頁</button>
+        </div>
+        <HistoryResultBoundary key={viewedRecord.id}>
+          <Results result={viewedRecord.result} onReview={() => setPage("history")} reviewLabel="返回歷史紀錄" />
+        </HistoryResultBoundary>
+      </>}
       {storageError && (
         <div className="storage-notice" role="status">
           目前無法保存進度。你仍可完成本次測驗，關閉後進度可能遺失。
         </div>
       )}
 
-      {session.screen === "home" && (
+      {page === "quiz" && session.screen === "home" && (
         <main className="home-page">
           <section className="home-hero">
             <img
@@ -213,7 +255,7 @@ export function App() {
         </main>
       )}
 
-      {session.screen === "quiz" && (
+      {page === "quiz" && session.screen === "quiz" && (
         <Quiz
           question={questions[session.questionIndex]}
           index={session.questionIndex}
@@ -229,16 +271,16 @@ export function App() {
           onNext={() =>
             setSession((previous) =>
               previous.questionIndex === questions.length - 1
-                ? { ...previous, screen: "results" }
+                ? completeSession(previous)
                 : { ...previous, questionIndex: previous.questionIndex + 1 },
             )
           }
         />
       )}
 
-      {session.screen === "results" && (
+      {page === "quiz" && session.screen === "results" && session.completion && (
         <Results
-          answers={session.answers}
+          result={session.completion.result}
           onReview={() =>
             setSession((previous) => ({
               ...previous,
@@ -273,7 +315,8 @@ export function App() {
             <button
               className="primary-button"
               onClick={() => {
-                setSession({ ...createSession(), screen: "quiz" });
+                setSession(previous => ({ ...createSession(), pendingRecords: previous.pendingRecords, screen: "quiz" }));
+                setPage("quiz");
                 setReset(false);
               }}
             >

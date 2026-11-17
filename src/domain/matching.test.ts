@@ -264,6 +264,7 @@ describe("answer selection and saved progress", () => {
     expect(session.questionIndex).toBe(1);
     expect(restoreSession("{broken")).toEqual({
       version: 1,
+      historyVersion: 1,
       answers: {},
       questionIndex: 0,
       screen: "home",

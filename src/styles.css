@@ -1338,3 +1338,10 @@ button:disabled {
     scroll-behavior: auto !important;
   }
 }
+
+.history-page { min-height: 60vh; }
+.history-card { padding: 24px; margin: 20px 0; border: 1px solid #d8d4c8; border-radius: 8px; background: #fffdf8; }
+.history-card h2 { font-size: 20px; }
+.history-path { overflow-wrap: anywhere; user-select: text; }
+.history-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 24px 4%; }
+.header-actions { flex-wrap: wrap; }

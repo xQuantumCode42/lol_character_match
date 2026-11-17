@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -12,12 +12,9 @@ import {
   Swords,
   TreePine,
 } from "lucide-react";
-import { dimensionLabels } from "../data/champions";
-import { laneById, lanes } from "../data/lanes";
-import { getRecommendations } from "../domain/matching";
+import type { RecommendationSnapshot } from "../domain/history";
 import {
   dimensions,
-  type Answers,
   type LaneId,
   type RankedChampion,
 } from "../domain/types";
@@ -59,13 +56,16 @@ function ChampionCard({
 }
 
 export function Results({
-  answers,
+  result,
   onReview,
+  reviewLabel = "回看我的答案",
 }: {
-  answers: Answers;
+  result: RecommendationSnapshot;
   onReview: () => void;
+  reviewLabel?: string;
 }) {
-  const result = useMemo(() => getRecommendations(answers), [answers]);
+  const { laneDetails: laneById, dimensionLabels } = result;
+  const lanes = Object.values(laneById);
   const [selected, setSelected] = useState<RankedChampion | null>(null);
   const [showAll, setShowAll] = useState(false);
   const [search, setSearch] = useState("");
@@ -96,7 +96,7 @@ export function Results({
           <h1>這是你的冒險起點。</h1>
         </div>
         <button className="text-button" onClick={onReview}>
-          回看我的答案
+          {reviewLabel}
           <ArrowUpRight size={16} />
         </button>
       </div>
@@ -184,7 +184,7 @@ export function Results({
       <div className="results-footnote">
         <p>
           推薦來自可調整的玩法模型，適合程度可透過試玩確認。英雄資料版本
-          16.22.1，位置為研究候選。
+          {result.dataVersion}，位置為研究候選。
         </p>
         <button className="secondary-button" onClick={() => setShowAll(true)}>
           探索全部 173 位英雄

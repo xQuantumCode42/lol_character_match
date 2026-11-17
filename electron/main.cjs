@@ -1,5 +1,12 @@
-const { app, BrowserWindow, shell } = require("electron");
+const { app, BrowserWindow, shell, ipcMain, dialog } = require("electron");
 const path = require("node:path");
+const { HistoryStore } = require("./history-store.cjs");
+const primaryInstance = app.requestSingleInstanceLock();
+if (!primaryInstance) app.quit();
+app.on("second-instance", () => {
+  const window = BrowserWindow.getAllWindows()[0];
+  if (window) { if (window.isMinimized()) window.restore(); window.show(); window.focus(); }
+});
 
 const allowedHosts = new Set([
   "www.leagueoflegends.com",
@@ -29,6 +36,7 @@ function createWindow() {
     autoHideMenuBar: true,
     show: false,
     webPreferences: {
+      preload: path.join(__dirname, "preload.cjs"),
       nodeIntegration: false,
       contextIsolation: true,
       sandbox: true,
@@ -46,7 +54,26 @@ function createWindow() {
   else window.loadFile(path.join(__dirname, "../dist/index.html"));
 }
 
-app.whenReady().then(() => {
+if (primaryInstance) app.whenReady().then(() => {
+  const store = new HistoryStore({
+    settingsDirectory: app.getPath("userData"),
+    defaultHistoryDirectory: path.join(app.getPath("userData"), "history"),
+  });
+  const handle = (channel, operation) => ipcMain.handle(channel, (event, ...args) => {
+    const window = BrowserWindow.fromWebContents(event.sender);
+    if (!window || event.senderFrame !== event.sender.mainFrame) throw new Error("不允許的歷史存取");
+    return operation(window, ...args);
+  });
+  handle("history:getSettings", () => store.getSettings());
+  handle("history:list", () => store.list());
+  handle("history:save", (_window, record) => store.save(record));
+  handle("history:chooseDirectory", async window => {
+    const selection = await dialog.showOpenDialog(window, {
+      title: "選擇歷史紀錄資料夾", properties: ["openDirectory", "createDirectory"],
+    });
+    if (selection.canceled || !selection.filePaths.length) return null;
+    return store.setDirectory(selection.filePaths[0]);
+  });
   createWindow();
   app.on("activate", () => {
     if (!BrowserWindow.getAllWindows().length) createWindow();

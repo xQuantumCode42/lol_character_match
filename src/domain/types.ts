@@ -1,3 +1,4 @@
+import type { HistoryRecord } from "./history";
 export const dimensions = [
   "independence",
   "teamwork",
@@ -42,6 +43,9 @@ export interface Question {
 export type Answers = Record<string, string[]>;
 export interface Session {
   version: 1;
+  historyVersion?: 1;
+  completion?: HistoryRecord;
+  pendingRecords?: HistoryRecord[];
   answers: Answers;
   questionIndex: number;
   screen: "home" | "quiz" | "results";

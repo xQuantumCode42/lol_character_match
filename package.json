@@ -15,7 +15,8 @@
     "test": "vitest run",
     "build": "npm run typecheck && vite build",
     "package:win": "npm run build && electron-builder --win portable --x64",
-    "test:desktop": "node scripts/verify-desktop.mjs"
+    "test:desktop": "node scripts/verify-desktop.mjs",
+    "test:history": "npm run build && node scripts/verify-history-recovery.cjs"
   },
   "dependencies": {
     "lucide-react": "1.73.0",
@@ -39,7 +40,7 @@
     "productName": "Rift Compass",
     "asar": true,
     "directories": { "output": "release/0.1.0" },
-    "files": ["dist/**/*", "electron/main.cjs", "package.json"],
+    "files": ["dist/**/*", "electron/**/*", "package.json"],
     "win": {
       "target": ["portable"],
       "artifactName": "Rift Compass ${version}.exe",

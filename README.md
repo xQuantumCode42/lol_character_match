@@ -10,6 +10,10 @@
 
 結果提供首選與次選位置、三位起步英雄、一位精熟挑戰、推薦理由與練習方向。全部 173 位英雄也可依本次答案排序後搜尋與查看。
 
+完成測驗後會自動保存歷史紀錄，從右上角「歷史紀錄」可查看日期與當時的完整推薦。重新測驗、或修改答案後再完成，會保留另一筆快照；重新開啟同一結果不會重複新增。升級時仍留存的舊版已完成測驗會匯入一次，原完成時間會標示為未知。
+
+右上角「設定」顯示完整儲存位置，可選擇本機資料夾。預設位於目前 Windows 使用者的應用程式資料目錄。變更位置會合併兩邊紀錄並保留原檔案，有衝突或損壞資料時會顯示錯誤。修正儲存位置後，可按「重試保存」處理尚未寫入的紀錄。
+
 ## 推薦模型
 
 來源為 Riot Data Dragon 16.22.1，調查日期為 2026-11-15。官方資料與研究分析位於 [研究文件](docs/research/champion-survey-2026-11-15.md)。
@@ -35,6 +39,7 @@ npm test
 npm run build
 node scripts/verify-dev.mjs
 npm run test:desktop
+npm run test:history
 node scripts/verify-portable.mjs
 npm run package:win
 ```
